@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/222038531/5.2P/issues"
   },
-  "homepage": "https://github.com/222038531/5.2P#readme"
+  "homepage": "https://github.com/222038531/5.2P#readme",
+  "dependencies": {
+    "express": "^5.2.1"
+  }
 }
