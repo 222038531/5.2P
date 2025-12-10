@@ -1,0 +1,19 @@
+{
+  "name": "5.2p",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/222038531/5.2P.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/222038531/5.2P/issues"
+  },
+  "homepage": "https://github.com/222038531/5.2P#readme"
+}
