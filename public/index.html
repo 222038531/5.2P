@@ -23,14 +23,9 @@
             for (const book of books) {
                 const p = document.createElement('p');
                 p.innerHTML = `Title: ${book.title} <br> 
-                    Author: ${book.author} <br> 
-                    Year: ${book.year}<br> 
-                    Genre: ${book.genre}<br> 
-                Summary: ${book.summary}`;
+                    Author: ${book.author}`; 
                 console.log(p)
                 out.appendChild(p);
-                //const title = books.title
-                //out.append(title);
             }
         }
 
