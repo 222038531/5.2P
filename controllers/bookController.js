@@ -1,12 +1,21 @@
-const bookService = require("../services/bookService");
+const bookService = require('../services/bookService');
 
+// Controller uses the service to get data
 exports.getAllBook = (req, res) => {
-    const books = bookService.getAllBook();
-    res.json({
-        status: 200,
-        data: books,
-        message: "Book details retrieved using service"
-    });
+  const items = bookService.getAllBook();
+  res.json({
+    status: 200,
+    data: items,
+    message: 'Book Item retrieved using service'
+  });
 };
 
+exports.getBookById = (req, res) => {
+  const items = bookService.getAllBook();
+  res.json({
+    status: 200,
+    data: items,
+    message: 'Book Item retrieved using service'
+  });
 
+}

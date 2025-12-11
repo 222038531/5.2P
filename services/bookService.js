@@ -1,5 +1,4 @@
-// This acts like a fake database for now
-const foodItems = [
+const bookItems = [
         { 
         id: 'b1', 
         title: 'The Three-Body Problem', 
@@ -43,12 +42,11 @@ const foodItems = [
 
   ];
   
-  // Service function to get all food items
-  const getAllFood = () => {
-    return foodItems;
-  };
-  
-  module.exports = {
-    getAllFood
-  };
-  
+const getAllBook = () => {
+    return bookItems;
+};
+
+module.exports = {
+    getAllBook
+};
+

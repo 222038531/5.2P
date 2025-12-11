@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Book Service</title>
+</head>
+<body>
+    <h1>Book Service</h1>
+    <div id="BookDisplay"></div>
+
+    <script>
+        const out = document.getElementById('BookDisplay');
+
+        getBook("/api/book");
+        
+        const render = (books) => {
+            out.innerHTML = '';
+            if (!Array.isArray(books) || books.length === 0){
+                out.textContent = 'No Books';
+                return;
+            }
+
+            for (const book of books) {
+                const p = document.createElement('p');
+                p.innerHTML = `Title: ${book.title} <br> 
+                    Author: ${book.author} <br> 
+                    Year: ${book.year}<br> 
+                    Genre: ${book.genre}<br> 
+                Summary: ${book.summary}`;
+                console.log(p)
+                out.appendChild(p);
+                //const title = books.title
+                //out.append(title);
+            }
+        }
+
+        async function getBook(api) {
+            let res = await fetch(api);
+            let body = await res.json();
+            console.log(body.data);
+            render(body.data);
+        }
+
+
+    </script>
+</body>
+</html>
+

@@ -1,4 +1,4 @@
 module.exports = {
-    foodController: require('./bookController')
+    bookController: require('./bookController')
   };
   
